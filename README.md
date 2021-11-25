@@ -17,7 +17,5 @@ Final Project for Multimedia - Escuela Superior de Informática - Ciudad Real
 ## :books: More about the project :books:
 [KaraOKE](https://github.com/Josue-Zenteno/KaraOKE) is an interactive video player web app where you can easily improve your english skills listening the music that you love more and having a good time. Playing is the best way to learn. 
 
-If you want to know more about how KaraOKE works internally go to the official [Wiki](https://github.com/Josue-Zenteno/KaraOKE/wiki)
-
 ## :raising_hand: Contact us :raising_hand:
 Feel free to send us an email if you have any question about the project.
