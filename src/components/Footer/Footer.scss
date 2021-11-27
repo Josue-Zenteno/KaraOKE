@@ -1,0 +1,16 @@
+.footer {
+    background-color: #3a3a3a;
+    width: 100%;
+    bottom: 0;
+    min-height: 150px;
+    padding: 30px 30px;
+    display: flex;
+    position: fixed;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+
+    .MuiLink-underlineNone {
+        color: var(--main-color) !important;
+    }
+}
