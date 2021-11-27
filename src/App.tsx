@@ -4,6 +4,7 @@ import { Button, Container, Grid, createTheme, ThemeProvider } from "@mui/materi
 import NavBar from "./components/NavBar/NavBar";
 import Footer from "./components/Footer/Footer";
 import HomePage from "./pages/HomePage/HomePage";
+import AboutPage from "./pages/AboutPage/AboutPage";
 import NormVideosPage from "./pages/NormVideosPage/NormVideosPage";
 import InterVideosPage from "./pages/InterVideosPage/InterVideosPage";
 
@@ -35,6 +36,11 @@ export default function App() {
                     <InterVideosPage />
                   </Route>
 
+                  {/* About */}
+                  <Route path='/about'>
+                    <AboutPage />
+                  </Route>
+
                   {/* Home */}
                   <Route path='/'>
                     <HomePage />
@@ -45,7 +51,7 @@ export default function App() {
           </Grid>
 
           {/* Footer */}
-          <Grid item xs={12} sm={12} md={12} lg={12} sx={{ backgroundColor: "orange" }}>
+          <Grid item xs={12} sm={12} md={12} lg={12}>
             <Footer />
           </Grid>
         </Grid>
