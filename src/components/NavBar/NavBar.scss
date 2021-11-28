@@ -1,0 +1,21 @@
+.Logo img {
+    margin: 15px 50px 0px 0px;
+    height: auto;
+    width: auto;
+    max-width: 150px;
+}
+
+.SmallLogo img {
+    margin: 15px 0px 0px 0px;
+    height: auto;
+    width: auto;
+    max-width: 120px;
+}
+
+.MuiLink-underlineNone:active {
+    color: #fefefe;
+}
+
+.MuiLink-underlineNone:hover {
+    color: var(--main-color);
+}
