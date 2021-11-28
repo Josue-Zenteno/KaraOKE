@@ -1,7 +1,7 @@
 import JosuePic from "../assets/images/JosuePic.png";
 import SergioPic from "../assets/images/SergioPic.png";
 import AdrianPic from "../assets/images/AdrianPic.png";
-
+import KaraOKELogo from "../assets/images/KaraOKE_Logo.png";
 interface TeamMember {
   Name: String;
   Surname: String;
@@ -13,6 +13,7 @@ interface ProjectData {
   ProjectName: String;
   ProjectDescription: String;
   ProjectRepository: string;
+  ProjectLogo: string;
   TeamName: String;
   TeamMembers: TeamMember[];
 }
@@ -22,6 +23,7 @@ const ProjectData: ProjectData = {
   ProjectDescription:
     "KaraOKE is an interactive video player web app where you can easily improve your english skills listening the music that you love more and having a good time. Playing is the best way to learn.",
   ProjectRepository: "https://github.com/Josue-Zenteno/KaraOKE",
+  ProjectLogo: KaraOKELogo,
   TeamName: "Group 1",
   TeamMembers: [
     {
