@@ -15,15 +15,15 @@ export default function App() {
   return (
     <ThemeProvider theme={MainTheme}>
       <Container maxWidth={false}>
-        <Grid container>
-          {/* NavBar */}
-          <Grid item xs={12} sm={12} md={12} lg={12} sx={{ backgroundColor: "green" }}>
-            <NavBar />
-          </Grid>
+        <Router>
+          <Grid container className='App'>
+            {/* NavBar */}
+            <Grid item xs={12}>
+              <NavBar />
+            </Grid>
 
-          {/* Pages */}
-          <Grid item xs={12} sm={12} md={12} lg={12} sx={{ backgroundColor: "yellow" }}>
-            <Router>
+            {/* Pages */}
+            <Grid item className='Content' xs={12}>
               <div>
                 <Switch>
                   {/* Normal Video Player */}
@@ -47,14 +47,14 @@ export default function App() {
                   </Route>
                 </Switch>
               </div>
-            </Router>
-          </Grid>
+            </Grid>
 
-          {/* Footer */}
-          <Grid item xs={12} sm={12} md={12} lg={12}>
-            <Footer />
+            {/* Footer */}
+            <Grid item className='Footer' xs={12}>
+              <Footer />
+            </Grid>
           </Grid>
-        </Grid>
+        </Router>
       </Container>
     </ThemeProvider>
   );
