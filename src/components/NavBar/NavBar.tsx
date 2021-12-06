@@ -20,7 +20,7 @@ const NavBar = (props: RouteProps) => {
   };
 
   return (
-    <AppBar className='NavBar' position='sticky'>
+    <AppBar className='NavBar'>
       <Container maxWidth={false}>
         <Toolbar>
           {/* Logo */}
@@ -35,14 +35,7 @@ const NavBar = (props: RouteProps) => {
           {/* Collapsed Menu */}
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
             {/* Hamburguer Button */}
-            <IconButton
-              size='large'
-              aria-label='account of current user'
-              aria-controls='menu-appbar'
-              aria-haspopup='true'
-              onClick={handleOpenNavMenu}
-              color='inherit'
-            >
+            <IconButton onClick={handleOpenNavMenu}>
               <MenuIcon />
             </IconButton>
 
@@ -52,7 +45,7 @@ const NavBar = (props: RouteProps) => {
               open={Boolean(anchorElNav)}
               onClose={handleCloseNavMenu}
               sx={{
-                display: { xs: "block", md: "none" },
+                display: { md: "none" },
               }}
             >
               {Sections.map((Section) => {
@@ -70,7 +63,7 @@ const NavBar = (props: RouteProps) => {
           </Box>
 
           {/* Collapsed Logo */}
-          <Typography noWrap component='div' sx={{ display: { xs: "flex", md: "none" } }}>
+          <Typography noWrap component='div' sx={{ display: { md: "none" } }}>
             <Link href='/'>
               <figure className='SmallLogo'>
                 <img src={ProjectData.ProjectLogo} alt='' />
