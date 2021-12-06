@@ -1,3 +1,5 @@
-export default function VideoThumbnail() {
-  return <div className='VideoThumbnail'>VideoThumbnail</div>;
+import ReactPlayer from "react-player";
+import "./VideoThumbnail.scss";
+export default function VideoThumbnail({ video }) {
+  return <img src={video.thumbnail} className='Thumbnail'></img>;
 }
