@@ -1,0 +1,17 @@
+.ThumbnailDescription {
+    color: #fefefe;
+    text-transform: none;
+    text-align: justify;
+
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    padding: 0px 0px 0px 10px !important;
+    @media (max-width: 1199px) {
+        padding: 0px 0px 0px 10px !important;
+    }
+}
+
+.ThumbnailDescription .ShortDescription {
+    margin: -8px 0px 0px 2px;
+}
