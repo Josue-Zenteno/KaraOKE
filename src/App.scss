@@ -8,4 +8,23 @@
 
 .App {
     color: #fefefe;
+    position: relative;
+    min-height: 90vh;
+
+    .NavBar {
+        position: sticky !important;
+        top: 0 !important;
+        z-index: 1;
+    }
+
+    .Content {
+        padding-bottom: 2.5rem;
+    }
+
+    .Footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 2.5rem;
+    }
 }
