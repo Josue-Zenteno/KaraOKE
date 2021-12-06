@@ -21,7 +21,7 @@ interface ProjectData {
 const ProjectData: ProjectData = {
   ProjectName: "KaraOKE",
   ProjectDescription:
-    "KaraOKE is an interactive video player web app where you can easily improve your english skills listening the music that you love more and having a good time. Playing is the best way to learn.",
+    "KaraOKE is an interactive video player web app where you can easily improve your english skills by listening the music you love the most and having a good time. Playing is the best way to learn.",
   ProjectRepository: "https://github.com/Josue-Zenteno/KaraOKE",
   ProjectLogo: KaraOKELogo,
   TeamName: "Group 1",
