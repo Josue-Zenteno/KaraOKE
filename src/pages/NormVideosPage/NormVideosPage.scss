@@ -1,0 +1,26 @@
+/* VideoPlayer section */
+.NormalVideoPlayer .VideoPlayer {
+    margin: 30px 0px 20px 0px !important;
+    @media (max-width: 1199px) {
+        margin: 0px 0px 20px 0px !important;
+    }
+}
+
+.NormalVideoPlayer .VideoPlayer .Player {
+    margin: 0px 0px 20px 0px !important;
+    padding: 0px 20px 0px 0px !important;
+    @media (max-width: 1199px) {
+        padding: 0px 0px 0px 0px !important;
+    }
+}
+/* End of VideoPlayer section */
+
+/* Thumbnails section */
+.NormalVideoPlayer .Thumbnails {
+    margin: 30px 0px 0px 0px !important;
+}
+
+.NormalVideoPlayer .Thumbnails .Thumbnail {
+    margin-bottom: 10px;
+}
+/* End of Thumbnails section */
