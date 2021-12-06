@@ -1,3 +1,9 @@
+.NavBar {
+    position: sticky !important;
+    top: 0 !important;
+    z-index: 1;
+}
+
 .Logo img {
     margin: 15px 50px 0px 0px;
     height: auto;
@@ -6,6 +12,7 @@
 }
 
 .SmallLogo img {
+    padding-right: 0 !important;
     margin: 15px 0px 0px 0px;
     height: auto;
     width: auto;
@@ -18,4 +25,8 @@
 
 .MuiLink-underlineNone:hover {
     color: var(--main-color);
+}
+
+.MuiAppBar-root {
+    padding-right: 0 !important;
 }
