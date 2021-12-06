@@ -1,5 +1,26 @@
-import Enemy480 from "../assets/videos/enemy-480.mp4";
-import EnemyThumb from "../assets/thumbnails/thumbnail.png";
+import BlindingLights from "../assets/videos/blinding-lights.mp4";
+import BlindingLightsThumb from "../assets/thumbnails/blinding-lights-thumb.png";
+
+import Enemy from "../assets/videos/enemy.mp4";
+import EnemyThumb from "../assets/thumbnails/enemy-thumb.png";
+
+import Jinjer from "../assets/videos/jinjer.mp4";
+import JinjerThumb from "../assets/thumbnails/jinjer-thumb.png";
+
+import LazyTown from "../assets/videos/lazy-town.mp4";
+import LazyTownThumb from "../assets/thumbnails/lazy-town-thumb.png";
+
+import MyConfession from "../assets/videos/my-confession.mp4";
+import MyConfessionThumb from "../assets/thumbnails/my-confession-thumb.png";
+
+import SheperdOfFire from "../assets/videos/shepherd-of-fire.mp4";
+import SheperdOfFireThumb from "../assets/thumbnails/shepherd-of-fire-thumb.png";
+
+import TheIslander from "../assets/videos/the-islander.mp4";
+import TheIslanderThumb from "../assets/thumbnails/the-islander-thumb.png";
+
+import Warbringers from "../assets/videos/warbringers.mp4";
+import WarbringersThumb from "../assets/thumbnails/warbringers-thumb.png";
 
 export interface Video {
   title: string;
@@ -12,100 +33,68 @@ export interface Video {
 
 const Videos: Video[] = [
   {
-    title: "Titulo del video 1",
-    description: "Descripcion del video 1",
-    shortDesc: "Short Description",
-    url: Enemy480,
+    title: "Blinding Lights",
+    description: "Hombre que va en coche muy rápido mientras va bebido",
+    shortDesc: "The Weeknd",
+    url: BlindingLights,
+    captions: "",
+    thumbnail: BlindingLightsThumb,
+  },
+  {
+    title: "Enemy",
+    description: "Enemy cancion de la serie ARCANE",
+    shortDesc: "Imagine Dragons",
+    url: Enemy,
     captions: "",
     thumbnail: EnemyThumb,
   },
   {
-    title: "Titulo del video 2",
-    description: "Descripcion del video 2",
-    shortDesc: "Short Description",
-    url: Enemy480,
+    title: "Jinjer",
+    description: "Jinjer gutural video te vas a quedar to loco",
+    shortDesc: "Jinjer",
+    url: Jinjer,
     captions: "",
-    thumbnail: EnemyThumb,
+    thumbnail: JinjerThumb,
   },
   {
-    title: "Titulo del video 3",
-    description: "Descripcion del video 3",
-    shortDesc: "Short Description",
-    url: Enemy480,
+    title: "Lazy Town",
+    description: "Canción principal de la serie Lazy Town",
+    shortDesc: "Lazy Town",
+    url: LazyTown,
     captions: "",
-    thumbnail: EnemyThumb,
+    thumbnail: LazyTownThumb,
   },
   {
-    title: "Titulo del video 4",
-    description: "Descripcion del video 4",
-    shortDesc: "Short Description",
-    url: Enemy480,
+    title: "My Confession",
+    description: "El rey arturo yo que sé jajaja",
+    shortDesc: "Kamelot",
+    url: MyConfession,
     captions: "",
-    thumbnail: EnemyThumb,
+    thumbnail: MyConfessionThumb,
   },
   {
-    title: "Titulo del video 1",
-    description: "Descripcion del video 1",
-    shortDesc: "Short Description",
-    url: Enemy480,
+    title: "Sheperd of Fire",
+    description: "El galaxy fold vengador o asi xd",
+    shortDesc: "Avenged Seven Fold",
+    url: SheperdOfFire,
     captions: "",
-    thumbnail: EnemyThumb,
+    thumbnail: SheperdOfFireThumb,
   },
   {
-    title: "Titulo del video 2",
-    description: "Descripcion del video 2",
-    shortDesc: "Short Description",
-    url: Enemy480,
+    title: "The Islander",
+    description: "Es islitas que vivirá en la Palma o por ahí",
+    shortDesc: "Night Wish",
+    url: TheIslander,
     captions: "",
-    thumbnail: EnemyThumb,
+    thumbnail: TheIslanderThumb,
   },
   {
-    title: "Titulo del video 3",
-    description: "Descripcion del video 3",
-    shortDesc: "Short Description",
-    url: Enemy480,
+    title: "Warbringers",
+    description: "Jaja bander",
+    shortDesc: "Warbringers",
+    url: Warbringers,
     captions: "",
-    thumbnail: EnemyThumb,
-  },
-  {
-    title: "Titulo del video 4",
-    description: "Descripcion del video 4",
-    shortDesc: "Short Description",
-    url: Enemy480,
-    captions: "",
-    thumbnail: EnemyThumb,
-  },
-  {
-    title: "Titulo del video 1",
-    description: "Descripcion del video 1",
-    shortDesc: "Short Description",
-    url: Enemy480,
-    captions: "",
-    thumbnail: EnemyThumb,
-  },
-  {
-    title: "Titulo del video 2",
-    description: "Descripcion del video 2",
-    shortDesc: "Short Description",
-    url: Enemy480,
-    captions: "",
-    thumbnail: EnemyThumb,
-  },
-  {
-    title: "Titulo del video 3",
-    description: "Descripcion del video 3",
-    shortDesc: "Short Description",
-    url: Enemy480,
-    captions: "",
-    thumbnail: EnemyThumb,
-  },
-  {
-    title: "Titulo del video 4",
-    description: "Descripcion del video 4",
-    shortDesc: "Short Description",
-    url: Enemy480,
-    captions: "",
-    thumbnail: EnemyThumb,
+    thumbnail: WarbringersThumb,
   },
 ];
 
