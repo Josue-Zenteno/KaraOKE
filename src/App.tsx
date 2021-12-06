@@ -18,7 +18,7 @@ export default function App() {
         <Router>
           <Grid container className='App'>
             {/* NavBar */}
-            <Grid item xs={12}>
+            <Grid item xs={12} className='NavBar'>
               <NavBar />
             </Grid>
 
