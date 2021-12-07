@@ -1,0 +1,31 @@
+.TeamName {
+    margin-bottom: 40px !important;
+    @media (max-width: 900px) {
+        margin: 40px 0px 40px 0px !important;
+    }
+}
+
+.MemberCard {
+    min-width: 400px;
+    max-width: 400px;
+
+    @media (max-width: 900px) {
+        min-width: 350px;
+        max-width: 350px;
+    }
+    .Name {
+        font-size: 1.5rem;
+    }
+    .Email {
+        color: rgb(143, 143, 143);
+    }
+    .Button:hover {
+        color: var(--main-color);
+    }
+}
+
+.MemberCard:hover {
+    -ms-transform: scale(1.05) !important;
+    -webkit-transform: scale(1.05) !important;
+    transform: scale(1.05) !important;
+}
