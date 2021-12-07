@@ -6,7 +6,8 @@ interface TeamMember {
   Name: String;
   Surname: String;
   Email: String;
-  Picture: String;
+  Picture: string;
+  Github: string;
 }
 
 interface ProjectData {
@@ -31,18 +32,21 @@ const ProjectData: ProjectData = {
       Surname: "Zenteno Yave",
       Email: "JosueCarlos.Zenteno@alu.uclm.es",
       Picture: JosuePic,
+      Github: "https://github.com/Josue-Zenteno",
     },
     {
       Name: "Sergio",
       Surname: "Silvestre Pavón",
       Email: "Sergio.Silvestre@alu.uclm.es",
       Picture: SergioPic,
+      Github: "https://github.com/Sergio-Silvestre",
     },
     {
       Name: "Adrián",
       Surname: "Sánchez Miguel Ortega",
       Email: "Adrian.Sanchez14@alu.uclm.es",
       Picture: AdrianPic,
+      Github: "https://github.com/Adri-Sanchez-Miguel",
     },
   ],
 };
