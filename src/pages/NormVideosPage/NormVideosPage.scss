@@ -1,26 +1,30 @@
 /* VideoPlayer section */
-.NormalVideoPlayer .VideoPlayer {
-    margin: 30px 0px 20px 0px !important;
-    @media (max-width: 1199px) {
-        margin: 0px 0px 20px 0px !important;
+.NormalVideoPlayer {
+    .VideoPlayer {
+        margin: 30px 0px 20px 0px !important;
+        @media (max-width: 1199px) {
+            margin: 0px 0px 20px 0px !important;
+        }
+
+        .Player {
+            margin: 0px 0px 20px 0px !important;
+            padding: 0px 20px 0px 0px !important;
+            @media (max-width: 1199px) {
+                padding: 0px 0px 0px 0px !important;
+            }
+        }
+    }
+
+    .Thumbnails {
+        margin: 30px 0px 0px 0px !important;
+
+        .Thumbnail {
+            margin-bottom: 10px;
+        }
+        .Thumbnail:hover {
+            -ms-transform: scale(1.05) !important;
+            -webkit-transform: scale(1.05) !important;
+            transform: scale(1.05) !important;
+        }
     }
 }
-
-.NormalVideoPlayer .VideoPlayer .Player {
-    margin: 0px 0px 20px 0px !important;
-    padding: 0px 20px 0px 0px !important;
-    @media (max-width: 1199px) {
-        padding: 0px 0px 0px 0px !important;
-    }
-}
-/* End of VideoPlayer section */
-
-/* Thumbnails section */
-.NormalVideoPlayer .Thumbnails {
-    margin: 30px 0px 0px 0px !important;
-}
-
-.NormalVideoPlayer .Thumbnails .Thumbnail {
-    margin-bottom: 10px;
-}
-/* End of Thumbnails section */
