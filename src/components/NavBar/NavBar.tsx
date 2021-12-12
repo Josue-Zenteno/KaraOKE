@@ -26,9 +26,7 @@ const NavBar = (props: RouteProps) => {
           {/* Logo */}
           <Typography noWrap sx={{ display: { xs: "none", md: "flex" } }}>
             <Link href='/'>
-              <figure className='Logo'>
-                <img className='Logo' src={ProjectData.ProjectLogo} alt='' />
-              </figure>
+              <img className='Logo' src={ProjectData.ProjectLogo} alt='' />
             </Link>
           </Typography>
 
@@ -50,7 +48,7 @@ const NavBar = (props: RouteProps) => {
             >
               {Sections.map((Section) => {
                 return (
-                  <MenuItem>
+                  <MenuItem key={Section.Label}>
                     <Typography textAlign='center'>
                       <Link href={Section.Route} underline='none' color={pathName === Section.Route ? "primary" : "whitesmoke"}>
                         {Section.Label}
@@ -75,7 +73,7 @@ const NavBar = (props: RouteProps) => {
           <Grid spacing={2} container sx={{ display: { xs: "none", md: "flex" } }}>
             {Sections.map((Section) => {
               return (
-                <Grid item>
+                <Grid item key={Section.Label}>
                   <Typography textAlign='center'>
                     <Link href={Section.Route} underline='none' color={pathName === Section.Route ? "primary" : "whitesmoke"}>
                       {Section.Label}
