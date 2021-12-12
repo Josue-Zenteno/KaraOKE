@@ -22,13 +22,24 @@ import TheIslanderThumb from "../assets/thumbnails/the-islander-thumb.png";
 import Warbringers from "../assets/videos/warbringers.mp4";
 import WarbringersThumb from "../assets/thumbnails/warbringers-thumb.png";
 
+import Sentence, {
+  BlindingLightsLyrics,
+  EnemyLyrics,
+  JinjerLyrics,
+  LazyTownLyrics,
+  MyConfessionLyrics,
+  SheperdOfFireLyrics,
+  TheIslanderLyrics,
+  WarbringersLyrics,
+} from "./Captions";
 export interface Video {
   title: string;
   description: string;
   shortDesc: string;
   url: string;
-  captions: string;
+  captions: Sentence[];
   thumbnail: string;
+  difficulty: string;
 }
 
 const Videos: Video[] = [
@@ -37,64 +48,72 @@ const Videos: Video[] = [
     description: "Hombre que va en coche muy rápido mientras va bebido",
     shortDesc: "The Weeknd",
     url: BlindingLights,
-    captions: "",
+    captions: BlindingLightsLyrics,
     thumbnail: BlindingLightsThumb,
+    difficulty: "Medium",
   },
   {
     title: "Enemy",
     description: "Enemy cancion de la serie ARCANE",
     shortDesc: "Imagine Dragons",
     url: Enemy,
-    captions: "",
+    captions: EnemyLyrics,
     thumbnail: EnemyThumb,
+    difficulty: "Hard",
   },
   {
-    title: "Jinjer",
+    title: "Pisces",
     description: "Jinjer gutural video te vas a quedar to loco",
     shortDesc: "Jinjer",
     url: Jinjer,
-    captions: "",
+    captions: JinjerLyrics,
     thumbnail: JinjerThumb,
+    difficulty: "Hard",
   },
   {
-    title: "Lazy Town",
+    title: "We are one",
     description: "Canción principal de la serie Lazy Town",
     shortDesc: "Lazy Town",
     url: LazyTown,
-    captions: "",
+    captions: LazyTownLyrics,
     thumbnail: LazyTownThumb,
+    difficulty: "Easy",
   },
   {
     title: "My Confession",
     description: "El rey arturo yo que sé jajaja",
     shortDesc: "Kamelot",
     url: MyConfession,
-    captions: "",
+    captions: MyConfessionLyrics,
     thumbnail: MyConfessionThumb,
+    difficulty: "Medium",
   },
   {
     title: "Sheperd of Fire",
     description: "El galaxy fold vengador o asi xd",
     shortDesc: "Avenged Seven Fold",
     url: SheperdOfFire,
-    captions: "",
+    captions: SheperdOfFireLyrics,
     thumbnail: SheperdOfFireThumb,
+    difficulty: "Medium",
   },
   {
     title: "The Islander",
     description: "Es islitas que vivirá en la Palma o por ahí",
     shortDesc: "Night Wish",
     url: TheIslander,
-    captions: "",
+    captions: TheIslanderLyrics,
     thumbnail: TheIslanderThumb,
+    difficulty: "Medium",
   },
   {
-    title: "Warbringers",
+    title: "Warbringers: Jaina",
     description: "Jaja bander",
-    shortDesc: "Warbringers",
+    shortDesc: "Neal Acree, Logan Laflotte",
     url: Warbringers,
-    captions: "",
+    captions: WarbringersLyrics,
     thumbnail: WarbringersThumb,
+    difficulty: "Easy",
   },
 ];
 
