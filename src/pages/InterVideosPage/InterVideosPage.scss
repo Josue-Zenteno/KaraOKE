@@ -1,26 +1,54 @@
 /* VideoPlayer section */
-.InteractiveVideoPlayer .VideoPlayerSection {
-    margin: 30px 0px 20px 0px !important;
-    @media (max-width: 1199px) {
-        margin: 0px 0px 20px 0px !important;
+.InteractiveVideoPlayer {
+    .VideoPlayerSection {
+        display: flex;
+        justify-content: center;
+        margin: 30px 0px 20px 0px !important;
+        @media (max-width: 1199px) {
+            margin: 0px 0px 20px 0px !important;
+        }
+
+        .VideoPlayer {
+            margin: 0px 0px 0px 0px !important;
+            padding: 0px 20px 0px 0px !important;
+            @media (max-width: 1199px) {
+                padding: 0px 0px 0px 0px !important;
+            }
+        }
+
+        .Captions {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            position: relative;
+            bottom: 110px;
+            z-index: 1;
+            margin-right: 20px;
+            background-color: rgba(0, 0, 0, 0.438);
+
+            @media (max-width: 1199px) {
+                margin-right: 0px;
+                bottom: 50px;
+            }
+
+            .Text {
+                font-size: 1.5rem;
+                @media (max-width: 1199px) {
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+
+    .DescriptionSection {
+        margin-top: -15px;
+    }
+
+    .Thumbnails {
+        margin: 30px 0px 0px 0px !important;
+
+        .Thumbnail {
+            margin-bottom: 10px;
+        }
     }
 }
-
-.InteractiveVideoPlayer .VideoPlayerSection .VideoPlayer {
-    margin: 0px 0px 20px 0px !important;
-    padding: 0px 20px 0px 0px !important;
-    @media (max-width: 1199px) {
-        padding: 0px 0px 0px 0px !important;
-    }
-}
-/* End of VideoPlayer section */
-
-/* Thumbnails section */
-.InteractiveVideoPlayer .Thumbnails {
-    margin: 30px 0px 0px 0px !important;
-}
-
-.InteractiveVideoPlayer .Thumbnails .Thumbnail {
-    margin-bottom: 10px;
-}
-/* End of Thumbnails section */
