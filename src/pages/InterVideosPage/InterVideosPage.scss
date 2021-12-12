@@ -50,5 +50,11 @@
         .Thumbnail {
             margin-bottom: 10px;
         }
+
+        .Thumbnail:hover {
+            -ms-transform: scale(1.05) !important;
+            -webkit-transform: scale(1.05) !important;
+            transform: scale(1.05) !important;
+        }
     }
 }
