@@ -1,57 +1,47 @@
+import { createRef, useState } from "react";
+import ReactPlayer from "react-player";
 import { Button, Container, Grid, Typography } from "@mui/material";
-import VideoPlayer from "../../components/VideoPlayer/VideoPlayer";
+
+import FinalScore from "../../components/FinalScore/FinalScore";
+import OptionButton from "../../components/OptionButton/OptionButton";
 import VideoDesc from "../../components/VideoDesc/VideoDesc";
 import VideoThumbnail from "../../components/VideoThumbnail/VideoThumbnail";
 import VideoThumbnailDesc from "../../components/VideoThumbnailDesc/VideoThumbnailDesc";
 
 import Videos, { Video } from "../../utils/Videos";
-import { createRef, useState } from "react";
-import FinalScore from "../../components/FinalScore/FinalScore";
-import OptionButton from "../../components/OptionButton/OptionButton";
-
 import Sentence from "../../utils/Captions";
 
 import "./InterVideosPage.scss";
-import ReactPlayer from "react-player";
 
-let interval: number;
-let lyrics: Sentence[];
-let player = createRef<ReactPlayer>();
+let intervalCaptions: number;
+let currentLyrics: Sentence[];
+let videoPlayer = createRef<ReactPlayer>();
 
 export default function InterVideosPage() {
   const [currentVideo, setCurrentVideo] = useState(Videos[0]);
-  const [currentSentence, setCurrentSentence] = useState<string>("*Captions*");
+  const [currentCaption, setCurrentCaption] = useState<string>("*Captions*");
   const [finalScoreComponent, setFinalScoreComponent] = useState(<></>);
 
   // Handlers
-  const handleVideoUpdate = (video: Video): void => {
-    setCurrentVideo(video);
+  const handleChangeVideo = (video: Video): void => {
+    setupVideo(video);
   };
 
-  const handleReadyVideo = () => {
+  const handleReadyVideo = (): void => {
     hideFinalScore();
-    setCurrentSentence("*Captions*");
+    resetCaptions();
   };
 
-  const handleStartVideo = () => {
-    lyrics = currentVideo.captions;
+  const handleStartVideo = (): void => {
+    setupLyrics();
   };
 
   const handlePlayVideo = (): void => {
-    interval = setInterval(() => {
-      let tiempoactual: any = player?.current?.getCurrentTime();
-      let auxSentence = (): any => {
-        let aux = lyrics.find((sentence) => sentence.time == Math.round(tiempoactual));
-        return aux;
-      };
-      if (auxSentence()?.text) {
-        setCurrentSentence(auxSentence()?.text);
-      }
-    }, 1000);
+    startCaptions();
   };
 
   const handlePauseVideo = (): void => {
-    clearInterval(interval);
+    stopCaptions();
   };
 
   const handleEndVideo = (): void => {
@@ -59,7 +49,31 @@ export default function InterVideosPage() {
   };
 
   // Methods
-  const startInterval = (): string | void => {};
+  const setupVideo = (video: Video): void => {
+    setCurrentVideo(video);
+  };
+
+  const setupLyrics = (): void => {
+    currentLyrics = currentVideo.captions;
+  };
+
+  const startCaptions = (): void => {
+    intervalCaptions = setInterval(() => {
+      let currentTime = videoPlayer?.current?.getCurrentTime();
+      let currentSentence = findSentence(currentTime)?.text;
+      if (currentSentence) {
+        setCurrentCaption(currentSentence);
+      }
+    }, 1000);
+  };
+
+  const stopCaptions = (): void => {
+    clearInterval(intervalCaptions);
+  };
+
+  const resetCaptions = (): void => {
+    setCurrentCaption("*Captions*");
+  };
 
   const showFinalScore = (): void => {
     setFinalScoreComponent(<FinalScore />);
@@ -67,6 +81,12 @@ export default function InterVideosPage() {
 
   const hideFinalScore = (): void => {
     setFinalScoreComponent(<></>);
+  };
+
+  //Aux Methods
+  const findSentence = (currentTime: any): any => {
+    let aux = currentLyrics.find((sentence) => sentence.time == Math.round(currentTime));
+    return aux;
   };
 
   return (
@@ -78,7 +98,7 @@ export default function InterVideosPage() {
             {/* Video player */}
             <Grid item xs={12} className='VideoPlayer'>
               <ReactPlayer
-                ref={player}
+                ref={videoPlayer}
                 onReady={() => handleReadyVideo()}
                 onStart={() => handleStartVideo()}
                 onPlay={() => handlePlayVideo()}
@@ -93,7 +113,7 @@ export default function InterVideosPage() {
 
             {/* Captions */}
             <Grid item xs={12} className='Captions'>
-              <Typography className='Text'>{currentSentence}</Typography>
+              <Typography className='Text'>{currentCaption}</Typography>
             </Grid>
 
             {/* Description section */}
@@ -123,7 +143,7 @@ export default function InterVideosPage() {
             <Grid item>
               {Videos.map((Video) => {
                 return (
-                  <Button key={Video.title} onClick={() => handleVideoUpdate(Video)} fullWidth={true} className='Thumbnail'>
+                  <Button key={Video.title} onClick={() => handleChangeVideo(Video)} fullWidth={true} className='Thumbnail'>
                     <Grid container>
                       <Grid item xs={12} md sx={{ backgroundColor: "rgba(0, 0, 0, 0.438)" }}>
                         <VideoThumbnail video={Video} />
