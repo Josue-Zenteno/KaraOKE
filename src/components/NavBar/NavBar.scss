@@ -1,11 +1,11 @@
 .NavBar {
     position: sticky !important;
     top: 0 !important;
-    z-index: 1;
+    z-index: 2;
 }
 
-.Logo img {
-    margin: 15px 50px 0px 0px;
+.Logo {
+    margin: 15px 50px 15px 0px;
     height: auto;
     width: auto;
     max-width: 150px;
