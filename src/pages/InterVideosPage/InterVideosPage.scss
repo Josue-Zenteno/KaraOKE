@@ -28,7 +28,7 @@
 
             @media (max-width: 1199px) {
                 margin-right: 0px;
-                bottom: 50px;
+                bottom: 100px;
             }
 
             .Text {
@@ -42,16 +42,44 @@
 
     .DescriptionSection {
         margin-top: -15px;
+
+        .OptionButtons {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: right;
+
+            @media (max-width: 900px) {
+                justify-content: center;
+            }
+
+            .Button {
+                margin: 0px 20px 0px 0px;
+                width: fit-content;
+                height: 40px;
+                color: #fefefe;
+                @media (max-width: 900px) {
+                    margin: 20px 20px 20px 0px;
+                }
+            }
+        }
     }
 
     .Thumbnails {
-        margin: 30px 0px 0px 0px !important;
+        margin: 14px 0px 0px 0px !important;
 
-        .Thumbnail {
+        .FinalScoreSection {
+            margin: 0px 30px 15px 0px;
+            @media (max-width: 1200px) {
+                margin: 0px 40px 15px 40px;
+            }
+        }
+
+        .ThumbnailContainer {
             margin-bottom: 10px;
         }
 
-        .Thumbnail:hover {
+        .ThumbnailContainer:hover {
             -ms-transform: scale(1.05) !important;
             -webkit-transform: scale(1.05) !important;
             transform: scale(1.05) !important;
