@@ -26,7 +26,7 @@ export default function Footer() {
       <div>
         <Typography fontSize='medium' color='GrayText'>
           {`Designed and developed by `}
-          <Link href='/about' underline='none' color='primary'>
+          <Link href='/KaraOKE/about' underline='none' color='primary'>
             {ProjectData.TeamName}
           </Link>
         </Typography>

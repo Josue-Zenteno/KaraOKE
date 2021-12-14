@@ -37,7 +37,7 @@ export default function App() {
                   </Route>
 
                   {/* About */}
-                  <Route path='/KaraOKE//about'>
+                  <Route path='/KaraOKE/about'>
                     <AboutPage />
                   </Route>
 

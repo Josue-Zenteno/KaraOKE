@@ -15,7 +15,7 @@ export default function HomePage() {
 
         {/* Button */}
         <Grid item xs={12} className='LearnButton'>
-          <Link href='/interactive-video-player' underline='none'>
+          <Link href='/KaraOKE/interactive-video-player' underline='none'>
             <Button variant='contained' color='secondary' className='Button'>
               Let's Learn !!
             </Button>
