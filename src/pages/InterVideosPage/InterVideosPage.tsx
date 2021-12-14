@@ -3,7 +3,6 @@ import ReactPlayer from "react-player";
 import { Button, Container, Grid, Typography } from "@mui/material";
 
 import FinalScore from "../../components/FinalScore/FinalScore";
-import OptionButton from "../../components/OptionButton/OptionButton";
 import VideoDesc from "../../components/VideoDesc/VideoDesc";
 import VideoThumbnail from "../../components/VideoThumbnail/VideoThumbnail";
 import VideoThumbnailDesc from "../../components/VideoThumbnailDesc/VideoThumbnailDesc";
