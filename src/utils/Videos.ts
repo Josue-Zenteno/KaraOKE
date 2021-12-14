@@ -40,6 +40,7 @@ export interface Video {
   captions: Sentence[];
   thumbnail: string;
   difficulty: string;
+  answers: string[];
 }
 
 const Videos: Video[] = [
@@ -51,6 +52,7 @@ const Videos: Video[] = [
     captions: BlindingLightsLyrics,
     thumbnail: BlindingLightsThumb,
     difficulty: "Medium",
+    answers: ["SHOW", "LOOK", "ONE", "SEE", "TIME", "TOUCH"],
   },
   {
     title: "Enemy",
@@ -60,6 +62,7 @@ const Videos: Video[] = [
     captions: EnemyLyrics,
     thumbnail: EnemyThumb,
     difficulty: "Hard",
+    answers: ["SILENCE", "TURN", "SPARE", "FALL", "HOPE", "SHAPE", "PACK"],
   },
   {
     title: "Pisces",
@@ -69,6 +72,7 @@ const Videos: Video[] = [
     captions: JinjerLyrics,
     thumbnail: JinjerThumb,
     difficulty: "Hard",
+    answers: ["MEET", "SWALLOWS", "RUNS", "NO", "HOOKS", "GOLD", "BEAM"],
   },
   {
     title: "We are one",
@@ -78,6 +82,7 @@ const Videos: Video[] = [
     captions: LazyTownLyrics,
     thumbnail: LazyTownThumb,
     difficulty: "Easy",
+    answers: ["CAUGHT", "ALRIGHT", "NOW", "CHASE", "THROW", "DEAL"],
   },
   {
     title: "My Confession",
@@ -87,6 +92,7 @@ const Videos: Video[] = [
     captions: MyConfessionLyrics,
     thumbnail: MyConfessionThumb,
     difficulty: "Medium",
+    answers: ["SIGN", "HELL", "RELIVE", "SOUL", "TOGETHER", "PLACE"],
   },
   {
     title: "Sheperd of Fire",
@@ -96,6 +102,7 @@ const Videos: Video[] = [
     captions: SheperdOfFireLyrics,
     thumbnail: SheperdOfFireThumb,
     difficulty: "Medium",
+    answers: ["KNOWN", "WEAK", "LOST", "INTO", "LATE", "WRATH"],
   },
   {
     title: "The Islander",
@@ -105,6 +112,7 @@ const Videos: Video[] = [
     captions: TheIslanderLyrics,
     thumbnail: TheIslanderThumb,
     difficulty: "Medium",
+    answers: ["SHIP", "AFAR", "ONE", "FOG", "BROW"],
   },
   {
     title: "Warbringers: Jaina",
@@ -114,6 +122,7 @@ const Videos: Video[] = [
     captions: WarbringersLyrics,
     thumbnail: WarbringersThumb,
     difficulty: "Easy",
+    answers: ["DAUGHTER", "SHORES", "SIDE", "FLEE", "PRAY", "WAVES", "MOONLIT"],
   },
 ];
 
