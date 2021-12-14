@@ -1,0 +1,17 @@
+.FinalScore {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #90caf9;
+    border-radius: 50px;
+    .Title {
+        color: #fefefe;
+        padding: 5px;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    .Score {
+        color: #fefefe;
+        text-align: center;
+        font-size: 4.125rem;
+    }
+}
