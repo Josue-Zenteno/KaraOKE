@@ -27,22 +27,22 @@ export default function App() {
               <div>
                 <Switch>
                   {/* Normal Video Player */}
-                  <Route path='/video-player'>
+                  <Route path='/KaraOKE/video-player'>
                     <NormVideosPage />
                   </Route>
 
                   {/* Interactive Video Player */}
-                  <Route path='/interactive-video-player'>
+                  <Route path='/KaraOKE/interactive-video-player'>
                     <InterVideosPage />
                   </Route>
 
                   {/* About */}
-                  <Route path='/about'>
+                  <Route path='/KaraOKE//about'>
                     <AboutPage />
                   </Route>
 
                   {/* Home */}
-                  <Route path='/'>
+                  <Route path='/KaraOKE/'>
                     <HomePage />
                   </Route>
                 </Switch>
