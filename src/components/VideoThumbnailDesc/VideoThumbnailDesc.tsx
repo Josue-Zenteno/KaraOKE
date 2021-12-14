@@ -1,7 +1,11 @@
 import { Grid, Typography } from "@mui/material";
 import "./VideoThumbnailDesc.scss";
+import { Video } from "../../utils/Videos";
 
-export default function VideoThumbnailDesc({ video }) {
+type VideoDescProps = {
+  video: Video;
+};
+export default function VideoThumbnailDesc({ video }: VideoDescProps) {
   return (
     <Grid container className='ThumbnailDescription'>
       <Grid item xs={12}>

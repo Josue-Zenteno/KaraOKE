@@ -1,7 +1,12 @@
 import { Grid, Typography } from "@mui/material";
 import "./VideoDesc.scss";
+import { Video } from "../../utils/Videos";
 
-export default function VideoDesc({ video }) {
+type VideoDescProps = {
+  video: Video;
+};
+
+export default function VideoDesc({ video }: VideoDescProps) {
   return (
     <Grid container direction='column' className='VideoDescription'>
       <Grid item>

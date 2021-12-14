@@ -1,7 +1,12 @@
 import { Grid, Typography } from "@mui/material";
 import "./FinalScore.scss";
 
-export default function FinalScore({ maxScore, finalScore }) {
+type FinalScoreProps = {
+  maxScore: number;
+  finalScore: number;
+};
+
+export default function FinalScore({ maxScore, finalScore }: FinalScoreProps) {
   return (
     <Grid container direction='column' className='FinalScore'>
       <Grid item xs={12}>
