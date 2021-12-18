@@ -25,7 +25,7 @@ const NavBar = (props: RouteProps) => {
         <Toolbar>
           {/* Logo */}
           <Typography noWrap sx={{ display: { xs: "none", md: "flex" } }}>
-            <Link href='/'>
+            <Link href='/KaraOKE/'>
               <img className='Logo' src={ProjectData.ProjectLogo} alt='' />
             </Link>
           </Typography>
@@ -62,7 +62,7 @@ const NavBar = (props: RouteProps) => {
 
           {/* Collapsed Logo */}
           <Typography noWrap component='div' sx={{ display: { md: "none" } }}>
-            <Link href='/'>
+            <Link href='/KaraOKE/'>
               <figure className='SmallLogo'>
                 <img src={ProjectData.ProjectLogo} alt='' />
               </figure>
