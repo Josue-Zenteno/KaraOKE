@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { HashRouter as Router, Route, Switch } from "react-router-dom";
 import { Button, Container, Grid, createTheme, ThemeProvider } from "@mui/material";
 
 import NavBar from "./components/NavBar/NavBar";
@@ -27,22 +27,22 @@ export default function App() {
               <div>
                 <Switch>
                   {/* Normal Video Player */}
-                  <Route path='/KaraOKE/video-player'>
+                  <Route path='/video-player'>
                     <NormVideosPage />
                   </Route>
 
                   {/* Interactive Video Player */}
-                  <Route path='/KaraOKE/interactive-video-player'>
+                  <Route path='/interactive-video-player'>
                     <InterVideosPage />
                   </Route>
 
                   {/* About */}
-                  <Route path='/KaraOKE/about'>
+                  <Route path='/about'>
                     <AboutPage />
                   </Route>
 
                   {/* Home */}
-                  <Route path='/KaraOKE/'>
+                  <Route path='/'>
                     <HomePage />
                   </Route>
                 </Switch>

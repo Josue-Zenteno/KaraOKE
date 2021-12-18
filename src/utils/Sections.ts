@@ -6,15 +6,15 @@ interface Section {
 const Sections: Section[] = [
   {
     Label: "Normal Video Player",
-    Route: "/KaraOKE/video-player",
+    Route: "/#/video-player",
   },
   {
     Label: "Learn English",
-    Route: "/KaraOKE/interactive-video-player",
+    Route: "/#/interactive-video-player",
   },
   {
     Label: "About",
-    Route: "/KaraOKE/about",
+    Route: "/#/about",
   },
 ];
 
